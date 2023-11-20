@@ -1,23 +1,17 @@
 let cuocDT;
-let c = +prompt("Tổng Số phút gọi: ");
-let d = c - e - f;
-let e = c - d - f;
-let f = c - e - d ; 
+let a = +prompt("Tổng Số phút gọi: ");
 
- 
 
-if (f <= 50) {
-    cuocDT = (25000 + f*600);
+
+if ( a > 0 &&  a <= 50) {
+    cuocDT = (25000 + a*600);
     alert("Cước đt của bạn là :" + cuocDT);
-} else { if( 50 < e && e <= 200) {
-        cuocDT =  25000 + e*400 + f*600;
+} else { if( 50 < a && a <= 200) {
+        cuocDT =  25000 + (a-10)*400 + 10*600;
         alert ("Cước đt của bạn là :" + cuocDT);
-        } else if(d>200){
-            cuocDT = 25000 + d*200 + e*400 + f*600;
+        } else ( a > 200)
+            cuocDT = 25000 + (a-10-15)*200 + 15*400 + 10*600;
             alert ("Cước đt của bạn là : "+ cuocDT);
-            } else
-                cuocDT = 25000 
-                alert ("Cước đt của bạn là :" + cuocDT )
     }
 
 
